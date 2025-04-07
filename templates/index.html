@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Image Dehazing Application">
+    <title>Image Dehazing</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body>
+    <div class="container">
+        <h1>Image Dehazing</h1>
+        <form id="upload-form" enctype="multipart/form-data">
+            <input type="file" id="image-input" name="image" accept="image/*" required>
+            <button type="submit">Dehaze Image</button>
+        </form>
+        <div class="image-container">
+            <div>
+                <h2>Original Image</h2>
+                <img id="original-image" src="#" alt="Original Image">
+            </div>
+            <div>
+                <h2>Dehazed Image</h2>
+                <img id="dehazed-image" src="#" alt="Dehazed Image">
+            </div>
+        </div>
+    </div>
+    <script src="static/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dehazing Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>Dehazing Result</h2>
+        <div class="images">
+            <div>
+                <h3>Original Image</h3>
+                <img src="{{ input_image }}" alt="Original">
+            </div>
+            <div>
+                <h3>Dehazed Image</h3>
+                <img src="{{ output_image }}" alt="Dehazed">
+            </div>
+        </div>
+        <a href="/">Try Another Image</a>
+    </div>
+</body>
+</html>
